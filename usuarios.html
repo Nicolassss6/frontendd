@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Usuario</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="usuarios.html">Crear Usuario</a></li>
+      <li><a href="datos.html">Crear Publicación</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Formulario de Usuario</h1>
+    <form id="formUsuario">
+      <label for="nombre">Nombre *</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <div class="error-message" id="error-nombre"></div>
+
+      <label for="usuario">Usuario *</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <div class="error-message" id="error-usuario"></div>
+
+      <label for="fecha">Fecha Ingreso (dd/MM/yyyy) *</label>
+      <input type="text" id="fecha" name="fecha" placeholder="dd/MM/yyyy" required>
+      <div class="error-message" id="error-fecha"></div>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error-message" id="error-email"></div>
+
+      <label for="genero">Género</label>
+      <select id="genero" name="genero">
+        <option value="">Seleccione</option>
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="web">Sitio Web</label>
+      <input type="url" id="web" name="web">
+
+      <button type="button" id="btnGuardar">Guardar</button>
+      <button type="button" class="cancelar" id="btnCancelar">Cancelar</button>
+    </form>
+  </main>
+  <script src="js/validarUsuario.js"></script>
+</body>
+</html>

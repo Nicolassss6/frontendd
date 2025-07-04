@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Evaluación U3</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="usuarios.html">Crear Usuario</a></li>
+      <li><a href="datos.html">Crear Publicación</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Datos desde JSONPlaceholder</h1>
+    <label for="selector">Selecciona tipo de datos:</label>
+    <select id="selector">
+      <option value="users">Usuarios</option>
+      <option value="posts">Publicaciones</option>
+      <option value="comments">Comentarios</option>
+      <option value="albums">Álbumes</option>
+      <option value="todos">Tareas</option>
+    </select>
+    <button id="btnCargar">Cargar Datos</button>
+    <table id="tabla" class="display" style="width:100%"></table>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
